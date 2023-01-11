@@ -38,3 +38,5 @@ CONNECTION_STRING = "mongodb://<username>:<password>@host:port/defaultauthdb?opt
 
 client = pymongo.MongoClient(CONNECTION_STRING)
 ```
+
+for more info on this check out my programming notes repo @ [programming notes](https://github.com/BenjaminWills/programming-notes/blob/master/MongoDB/Mongo%20DB.md)
