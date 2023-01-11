@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  mongodb:
+    container_name: mongodb4.0
+    image: mongo:4.0
+    environment:
+      MONGO_INITDB_DATABASE: data
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_db:/data/db
+
+volumes:
+  mongo_db:
+    driver: local
